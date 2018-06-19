@@ -16,7 +16,8 @@ class CordovaAppConfigExtension < ::Middleman::Extension
     @cordova_app_config = OpenStruct.new(
       name: xml.at_css('name').text,
       version: xml.at_css('widget').attributes['version'].value,
-      package_name: xml.at_css('widget').attributes['id'].value
+      package_name: xml.at_css('widget').attributes['id'].value,
+      env: config[:environment]
     )
   end
 
