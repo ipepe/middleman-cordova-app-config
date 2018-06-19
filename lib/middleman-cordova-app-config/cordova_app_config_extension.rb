@@ -17,7 +17,7 @@ class CordovaAppConfigExtension < ::Middleman::Extension
       name: xml.at_css('name').text,
       version: xml.at_css('widget').attributes['version'].value,
       package_name: xml.at_css('widget').attributes['id'].value,
-      env: config[:environment]
+      env: app.config[:environment]
     )
   end
 

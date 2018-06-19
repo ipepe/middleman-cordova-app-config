@@ -3,7 +3,7 @@ $LOAD_PATH.push File.expand_path('lib', __dir__)
 
 Gem::Specification.new do |s|
   s.name        = 'middleman-cordova-app-config'
-  s.version     = "1.0.1"
+  s.version     = "1.0.2"
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Patryk Ptasiński"]
   s.email       = ["patryk@ipepe.pl"]
